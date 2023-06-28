@@ -1,0 +1,66 @@
+--- eda/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io.lef	2023-02-13 13:43:43.000000000 +0100
++++ eda/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io.lef	2023-03-30 10:19:34.792862000 +0200
+@@ -3,6 +3,20 @@
+   DIVIDERCHAR "/" ;
+   BUSBITCHARS "[]" ;
++
++SITE GF_IO_Site
++  SYMMETRY X Y ;
++  CLASS PAD ;
++  SIZE 1 BY 350 ;
++END GF_IO_Site
++
++SITE GF_COR_Site
++  SYMMETRY X Y ;
++  CLASS PAD ;
++  SIZE 355 BY 355 ;
++END GF_COR_Site
++
++
+ MACRO gf180mcu_fd_io__asig_5p0
+-  CLASS PAD INOUT ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__asig_5p0 ;
+   ORIGIN 0.000 0.000 ;
+@@ -815,5 +829,5 @@
+ 
+ MACRO gf180mcu_fd_io__bi_24t
+-  CLASS PAD INOUT ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__bi_24t ;
+   ORIGIN 0.000 0.000 ;
+@@ -1669,5 +1683,5 @@
+ 
+ MACRO gf180mcu_fd_io__bi_t
+-  CLASS PAD INOUT ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__bi_t ;
+   ORIGIN 0.000 0.000 ;
+@@ -3807,5 +3821,5 @@
+ 
+ MACRO gf180mcu_fd_io__dvdd
+-  CLASS PAD POWER ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__dvdd ;
+   ORIGIN 0.000 0.000 ;
+@@ -4600,5 +4614,5 @@
+ 
+ MACRO gf180mcu_fd_io__dvss
+-  CLASS PAD POWER ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__dvss ;
+   ORIGIN 0.000 0.000 ;
+@@ -7609,5 +7623,5 @@
+ 
+ MACRO gf180mcu_fd_io__in_c
+-  CLASS PAD INPUT ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__in_c ;
+   ORIGIN 0.000 0.000 ;
+@@ -8416,5 +8430,5 @@
+ 
+ MACRO gf180mcu_fd_io__in_s
+-  CLASS PAD INPUT ;
++  CLASS PAD AREAIO ;
+   FOREIGN gf180mcu_fd_io__in_s ;
+   ORIGIN 0.000 0.000 ;
